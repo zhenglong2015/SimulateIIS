@@ -46,6 +46,9 @@ namespace ZTBIIS
                 HttpContext context = new HttpContext(requestText);
                 IHttpHandler app = new HttpApplication();
                 app.ProcessRequest(context);
+
+                proxSocket.Send(context.Response.GetResponseHeader());
+                proxSocket.Send(context.Response.Body);
             }
         }
     }

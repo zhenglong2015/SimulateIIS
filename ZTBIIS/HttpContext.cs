@@ -14,6 +14,7 @@ namespace ZTBIIS
         public HttpContext(string str)
         {
             Request = new HttpRequest(str);
+            Response = new HttpResponse();
         }
     }
 }

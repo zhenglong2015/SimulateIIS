@@ -10,12 +10,14 @@ namespace ZTBIIS
     {
         public HttpRequest(string requestStr)
         {
-            string[] dates = requestStr.Replace("\r\n", ",").Split(',');
+            if (!string.IsNullOrEmpty(requestStr))
+            {
+                string[] dates = requestStr.Replace("\r\n", ",").Split(',');
 
-            HttpMethod = dates[0].Split(' ')[0];
-            Url = dates[0].Split(' ')[1];
-            HttpVersion = dates[0].Split(' ')[2];
-
+                HttpMethod = dates[0].Split(' ')[0];
+                Url = dates[0].Split(' ')[1];
+                HttpVersion = dates[0].Split(' ')[2];
+            }
 
         }
         public string HttpMethod { get; set; }

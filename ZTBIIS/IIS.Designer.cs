@@ -77,7 +77,7 @@
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(100, 21);
             this.txtPort.TabIndex = 5;
-            this.txtPort.Text = "50000";
+            this.txtPort.Text = "50002";
             // 
             // label2
             // 
@@ -88,7 +88,7 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Port";
             // 
-            // Form1
+            // IIS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,7 +99,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.btnStar);
-            this.Name = "Form1";
+            this.Name = "IIS";
             this.Text = "IIS";
             this.ResumeLayout(false);
             this.PerformLayout();
