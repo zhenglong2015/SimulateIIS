@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HttpApplication.cs" />
+    <Compile Include="HttpContext.cs" />
     <Compile Include="HttpRequest.cs" />
+    <Compile Include="HttpResponse.cs" />
+    <Compile Include="IHttpHandler.cs" />
     <Compile Include="IIS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +85,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="IIS请求处理流程.jpg" />
     <Content Include="Http请求报文.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

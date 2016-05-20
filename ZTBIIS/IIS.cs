@@ -43,7 +43,9 @@ namespace ZTBIIS
                 string requestText = Encoding.Default.GetString(data,0,len);
                 //解析 请求报文 处理请求报文，返回响应内容
 
-                HttpRequest request = new HttpRequest(requestText);
+                HttpContext context = new HttpContext(requestText);
+                IHttpHandler app = new HttpApplication();
+                app.ProcessRequest(context);
             }
         }
     }
